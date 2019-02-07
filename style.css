@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+}
+nav{
+    width: 100vw;
+    height: 50px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav img{
+    width: 45px;
+}
+nav ul{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+nav ul a {
+    color: orange;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 'header header'
+                        'section section'
+                        'section section'
+                        'footer footer';
+    grid-auto-rows: 100px 200px 100px 80px;
+}
+header{
+    grid-area: header;
+    background-color: brown;
+    padding: 0 20px;
+}
+section{
+    grid-area: section;
+    background-color: blue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: teal;
+}
+section img{
+    width: 90%;
+    max-width: 530px;
+    max-height: 90%;
+    height: auto;
+    
+}
+@media(min-width:425px){
+    
+}
+
+
+
+@media(min-width: 768px){
+    nav img{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+    }
+}
+@media(min-width:1024px){
+    #main{
+        grid-template-areas: 
+        'header header'
+        'section section'
+        'section section'
+        'section footer';
+    }
+}
+@media(min-width:1340){
+    #main{
+        grid-template-areas: 
+        'header header'
+        'section section'
+        'section section'
+        'section footer';
+    }
+   
+}
+
+
+
+
+/* body{
+    margin: 0;
+
+}
+nav{
+    width: 100vw;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    font-size: 14pt;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+input{
+    display: block;
+}
+h1{
+    display: none;
+}
+@media(max-width:1000px){
+    input{
+        display: none;
+    }
+}
+@media(max-width:375px){
+    h1{
+        display: block;
+    }
+    a,input{
+        display: none;
+    }
+} */
+
